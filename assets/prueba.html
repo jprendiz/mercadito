@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --white: #EFEFEF;
+            --blue: #185ADB;
+            --orange: #FFC947;
+            --dark: #0A1931;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+            font-family: 'Lato', sans-serif;
+        }
+        .product-card {
+            width: 140px;
+        }
+        .product-card img {
+            width: 140px;
+            height: 140px;
+            border-radius: 20px;
+            object-fit: cover;
+            background-color: var(--blue);
+        }
+        .product-card .product-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+        }
+      
+        .product-card .product-info input {
+            font-size: 1.6rem;  
+        }
+        
+        .product-card .product-info div p:nth-child(1) {
+            font-size: 1.6rem;
+            margin-top: 0;
+            margin-bottom: 4px;
+        }
+        .product-card .product-info div p:nth-child(2) {
+            font-size: 1.2rem;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .service-info {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-card">
+        
+        
+        <div class="product-info">
+            <label for="carpinteria"> 
+                <img src="https://besvc.capacitateparaelempleo.org/coursesImages/848910f2-a898-4499-9536-9a59149ddac3.png"> 
+                <div class="service-info">
+                    <p>Carpintería</p>
+                    <input type="checkbox" id="carpinteria" name="carpinteria"> 
+                </div>
+            </label>
+        </div>
+
+        <!-- <div class="product-info">
+            <p for="carpinteria">Carpintería</p>
+            <input type="checkbox" id="carpinteria">
+        </div> -->
+
+        <!-- <div class="product-info">
+            <label class="product-info-text"> 
+                Carpintería prueba
+                <input type="checkbox" id="carpinteria" name="carpinteria"> 
+            </label>
+        </div> -->
+
+
+    </div>
+</body>
+</html>
