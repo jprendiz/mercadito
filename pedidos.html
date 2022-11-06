@@ -11,28 +11,57 @@
     <title>Mercadito</title>
 </head>
 <body>
-    
-    <div class="login pedidos">
-        <div class="form-container">
-    
-          <h1 class="title">PEDIDOS</h1>
-    
-          <form action="/" class="form">
-            <label for="proveedor" class="label">DE: <span>cliente@abcmail.com</span></label>
-            <label for="proveedor" class="label">PARA: <span>Patrocinador</span></label>
-    
-            <label for="descripcion" class="label">DESCRIPCION:</label>
-            <input type="text" id="descripcion" class="inputGrande">
-    
-            <label for="descripcion" class="label">DIRECCION EXACTA:</label>
-            <input type="text" id="descripcion" class="inputGrande">
-    
-            <button type="button" class="primary-button">Enviar pedido</button>
-          </form>
+    <section>
+      <div class="login pedidos">
+          <div class="form-container">
+      
+            <h1 class="title">PEDIDOS</h1>
+      
+            <form action="/" class="form">
+              <label for="proveedor" class="label">DE: <span>cliente@abcmail.com</span></label>
+              <label for="proveedor" class="label">PARA: <span>Patrocinador</span></label>
+      
+              <label for="descripcion" class="label">DESCRIPCION:</label>
+              <input type="text" id="descripcion" class="inputGrande">
+      
+              <label for="descripcion" class="label">DIRECCION EXACTA:</label>
+              <input type="text" id="descripcion" class="inputGrande">
+      
+              <button type="button" class="primary-button">Enviar pedido</button>
+            </form>
 
-          <a href="my-account.html">Historial</a>
+            <a href="my-account.html">Historial</a>
+          </div>
+          
+          <div class="container-msg">
+
+            <div class= "container-msg-enviado">
+                <div><label class="msg-arrow"></label></div>
+                <div><label class="pedidos-msg-fecha"> > Fecha: <span>99/99/99</span></label></div>
+                <div><label for="proveedor" class="pedidos-msg-para">PARA: <span>Patrocinador</span></label></div>
+                <div class="descripcion-msg">
+                    <label class="label">
+                      Lorem ipsum dolor sit amet consectetur...
+                    </label> 
+                </div>
+            </div>
+  
+            <div class="container-msg-recibido">
+              <div><label class="msg-arrow"></label></div>
+              <div><label class="pedidos-msg-fecha"> '<' Fecha: <span>99/99/99</span></label></div>
+              <div><label for="proveedor" class="pedidos-msg-para">DE: <span>Patrocinador</span></label></div>
+              <div class="descripcion-msg">
+                  <label class="label">
+                    Lorem ipsum dolor sit amet consectetur...
+                  </label> 
+              </div>
+          </div>
         </div>
-      </div>
 
+        </div>
+    </section>
+
+    <section class="historial">
+    </section>
 </body>
 </html>

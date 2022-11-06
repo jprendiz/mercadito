@@ -16,7 +16,7 @@
     font-family: 'Lato', sans-serif;
   }
 
-  .login {
+  .login, .historial{
     width: 90%;
     min-width: 288px;
     max-width: 450px;
@@ -26,11 +26,32 @@
     border-radius: 20px;
   }
 
-  .form-container {
+  .form-container, .container-msg  {
     display: flex;
     flex-direction: column;
     margin: 30px 0 0 0;
     height: auto;
+  }
+
+  .container-msg{
+    flex-direction: column;
+    width: 70%;
+    margin: 20px auto;
+    color: var(--dark);
+    background-color: var(--white);
+    border-radius: 8px;
+  }
+  
+  .container-msg-enviado {
+    margin-top: 20px;
+    border-top: 2px solid var(--orange);
+    border-bottom: 2px solid var(--orange);
+  }
+
+  .container-msg-recibido {
+    margin-top: 20px;
+    border-top: 2px solid var(--blue);
+    border-bottom: 2px solid var(--blue);
   }
 
   .form {
